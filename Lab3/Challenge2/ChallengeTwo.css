@@ -1,0 +1,13 @@
+body {
+  color: red;
+}
+
+ul {
+  color: green;
+  font-style: italic;
+}
+
+li {
+  style: inline;
+  font-size: 30px;
+}
