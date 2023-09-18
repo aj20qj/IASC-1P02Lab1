@@ -8,6 +8,6 @@ ul {
 }
 
 li {
-  style: inline;
+  text-overflow: ;
   font-size: 30px;
 }
