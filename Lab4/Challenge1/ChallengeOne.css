@@ -12,12 +12,12 @@ body {
   color: red;
   padding: 8px;
   margin: 20px 20px 20px 20px;
-  border: darkgreen 1px dashed;
+  border: darkgreen 2px dashed;
 }
 
 #thesandwich{
   width: 15%;
   margin: 0px 0px 0px 0px;
   padding: 20px;
-  border: #FFAA33 1px dashed;
+  border: #FFAA33 2px dashed;
 }
