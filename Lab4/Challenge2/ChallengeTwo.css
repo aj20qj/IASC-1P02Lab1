@@ -1,0 +1,38 @@
+#box {
+  background: white;
+  border: purple 3px dotted;
+  text-align: center;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#smoltext {
+  font-size: 10px;
+  text-align: center;
+  color: Green;
+  font-weight: bold;
+}
+
+#lefttext {
+  color: orange;
+  font-size: 40px;
+  text-align: left;
+}
+
+#redup {
+  color: red;
+  position: relative;
+  top: -10px;
+}
+
+#righttext {
+  text-align: right;
+  color: purple;
+  font-size: 8px;
+  font-weight: bold;
+}
+
+#yallo {
+  color: yellow;
+  font-style: italic;
+}
