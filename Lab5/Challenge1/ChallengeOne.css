@@ -1,6 +1,7 @@
 #wrapper{
   margin:0 auto;
   width: 1920px;
+  margin-left: -8px;
 }
 
 #pageheader{
@@ -8,9 +9,8 @@
   margin: 0 auto;
   text-align: center;
   color: white;
-  height: 100px;
-  margin-left: -8px;
-  margin-right: -8px;
+  height: 80px;
+  padding: 5px;
 }
 
 #leftside{
@@ -19,8 +19,6 @@
   color: white;
   height: 700px;
   width: 1920px;
-  margin-left: -8px;
-  margin-right: -8px;
 }
 
 #footy{
@@ -30,6 +28,4 @@
   background-color: blue;
   height: 100px;
   width: 1920px;
-  margin-left: -8px;
-  margin-right: -8px;
 }
