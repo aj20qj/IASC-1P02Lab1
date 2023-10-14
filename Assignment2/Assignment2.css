@@ -1,0 +1,65 @@
+body {
+  background-color: LightGrey;
+}
+
+#wrapper {
+  width: 560px;
+  margin: 0 auto;
+  position: fixed;
+}
+
+header {
+  z-index: 100;
+}
+
+.headerbox {
+    width: 100px;
+    float: left;
+    border: solid 3px black;
+    margin: 1px;
+    background-color: LightGrey;
+    padding: 2px;
+    text-align: center;
+}
+
+h1, h2 {
+  margin: 4px auto;
+  font-family: "OptimusPrinceps";
+}
+
+h1 {
+  font-size: 60px;
+}
+
+h2 {
+  font-size: 40px;
+  color: maroon;
+}
+
+.bold{
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+.italic {
+  font-style: italic;
+  text-transform: capitalize;
+}
+
+ol {
+  font-style: italic;
+}
+
+ul {
+  font-weight: bold;
+}
+
+.imageborder {
+  border: solid 4px black;
+  position: relative;
+  z-index: -1;
+}
+
+#Gwyn {
+  position: absolute;
+}
