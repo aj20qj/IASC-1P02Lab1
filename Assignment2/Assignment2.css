@@ -6,9 +6,6 @@ body {
   width: 560px;
   margin: 0 auto;
   position: fixed;
-}
-
-header {
   z-index: 100;
 }
 
