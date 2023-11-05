@@ -3,6 +3,10 @@ body {
   width: 1900px;
 }
 
+ul {
+  list-style-type: none;
+}
+
 #TopBackground {
   background-color: maroon;
   border-bottom: 6px solid black;
@@ -107,7 +111,7 @@ h3 {
   padding-bottom: 11px;
 }
 
-#TopButton {
+.TopButton {
   margin-top: -10px;
 }
 
