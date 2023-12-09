@@ -1,0 +1,108 @@
+body {
+  background-color: #111111;
+  margin: 0px;
+}
+
+main {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+#Logo {
+  height: auto;
+  width: 320px;
+}
+
+#TopBackground {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+#topnav ul{
+  list-style-type: none;
+  overflow: hidden;
+  margin: 0px;
+  padding: 0px;
+  border-top: solid 1px white;
+  border-bottom: solid 1px white;
+}
+
+#topnav li{
+  float: left;
+}
+
+#topnav a{
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+
+#topnav a:hover{
+  background-color: hsl(0, 0%, 10%);
+  color: maroon;
+}
+
+table {
+  width: 1000px;
+  table-layout: fixed;
+  color: white;
+}
+
+td {
+  color: white;
+  border: solid 1px white;
+}
+
+th {
+  color: white;
+  border: solid 1px white;
+}
+
+
+p {
+  color: white;
+}
+
+h1, h2 {
+  margin: 4px auto;
+  font-family: "OptimusPrinceps", "Courier New", Courier, monospace;
+  color: white;
+}
+
+h1 {
+  font-size: 60px;
+}
+
+h2 {
+  font-size: 40px;
+  color: maroon;
+}
+
+.bold {
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+.italic {
+  font-style: italic;
+  text-transform: capitalize;
+}
+
+ol {
+  font-style: italic;
+  color: white;
+}
+
+ul {
+  font-weight: bold;
+  color: white;
+}
+
+.imageborder {
+  border: solid 4px white;
+  position: relative;
+  z-index: -1;
+  max-width: 600px;
+}
