@@ -6,19 +6,22 @@
 		<meta content="en-us" http-equiv="Content-Language" />
 		<title>Dark Souls Mini Wiki</title>
 		<link href="P3.css" type="text/css" rel="stylesheet" />
-		<script type="text/javascript" src="scripts.js"></script>
 	</head>
 
-	<body>
+	<body onload="theTime()">
+		<a id="backToTop"></a>
 		<div id="TopBackground">
+			<div id="time"></div>
+			<div id="date"></div>
 			<img id="Logo" src="DarkSoulsWiki.png" alt="DSWiki"/>
-
 		</div>
+
+<script type="text/javascript" src="scripts.js"></script>
 
 		<div id="wrapper">
 			<nav id="topnav">
 				<ul>
-					<li><a href="P1.html">Walkthrough</a></li>
+					<li><a href="P1.html">Lore</a></li>
 					<li><a href="P2.html">Boss Information</a></li>
 				</ul>
 			</nav>
@@ -27,9 +30,8 @@
 	<main>
 		<div>
 			<br/>
-			<a href="#MainGameLoc" id="navLink">Main Game</a>
-			<a href="#DLCLoc" id="navLink">DLC</a>
-			<br/>
+			<a href="#DLCLoc" class="navLink">DLC</a>
+			<a href="#MainGameLoc" class="navLink">Main Game</a>
 			<a id="MainGameLoc"></a>
 			<h1 id="mainTitle">Main Game Locations</h1>
 			<h2>Undead Asylum</h2>
@@ -66,24 +68,6 @@
 			<img src="Loc2.jpg" alt="Firelink" class="imageborder"/>
 			<h3>Description</h3>
 			<p>Firelink Shrine is the place where the Chosen Undead starts their journey. This cozy place offers solace from the harsh outside world, and is where many of the NPCs will end up along their quests. This location connects to the Undead Burg, the Undead Parish, the Catacombs and the New Londo Ruins.</p>
-			<h3>Bosses</h3>
-			<table>
-				<colgroup>
-					<col span="1" style="width: 55%;">
-					<col span="1" style="width: 20%;">
-					<col span="1" style="width: 25%;">
-				</colgroup>
-				<tr>
-					<th>Name</th>
-					<th>Souls</th>
-					<th>Required?</th>
-				</tr>
-				<tr>
-					<td>None</td>
-					<td>N/A</td>
-					<td>N/A</td>
-				</tr>
-			</table>
 			<br/>
 			<hr></hr>
 			<br/>
@@ -173,24 +157,6 @@
 			<img src="Loc6.jpg" alt="Blight" class="imageborder"/>
 			<h3>Description</h3>
 			<p>The descent into Blighttown is down a dark and dingy sewer hole, and the path is incredibly treacherous. The Chosen Undead must make their way down a series of rickety wooden footpaths hanging over the side of the massive ravine. Once the player has made their way down into the poisonous swamp, there are a few ways to go. The player will first venture into Quelaag's domain to ring the second Bell of Awakening, but there are pathways to both The Great Hollow and the Valley of the Drakes as well.</p>
-			<h3>Bosses</h3>
-			<table>
-				<colgroup>
-					<col span="1" style="width: 55%;">
-					<col span="1" style="width: 20%;">
-					<col span="1" style="width: 25%;">
-				</colgroup>
-				<tr>
-					<th>Name</th>
-					<th>Souls</th>
-					<th>Required?</th>
-				</tr>
-				<tr>
-					<td>None</td>
-					<td>N/A</td>
-					<td>N/A</td>
-				</tr>
-			</table>
 			<br/>
 			<hr></hr>
 			<br/>
@@ -223,24 +189,6 @@
 			<img src="Loc8.jpg" alt="Hollow" class="imageborder"/>
 			<h3>Description</h3>
 			<p>To find the entrance to the Great Hollow, the Chosen Undead must walk up a tree root in the swamp and roll through two illusory walls. Once inside, the player must descend the vertical branches and pathways while avoiding the Basilisks and Mushrooms to safely make it to the bottom of the tree. From there, the player will venture onwards to one of the most breathtaking secrets in Dark Souls.</p>
-			<h3>Bosses</h3>
-			<table>
-				<colgroup>
-					<col span="1" style="width: 55%;">
-					<col span="1" style="width: 20%;">
-					<col span="1" style="width: 25%;">
-				</colgroup>
-				<tr>
-					<th>Name</th>
-					<th>Souls</th>
-					<th>Required?</th>
-				</tr>
-				<tr>
-					<td>None</td>
-					<td>N/A</td>
-					<td>N/A</td>
-				</tr>
-			</table>
 			<br/>
 			<hr></hr>
 			<br/>
@@ -248,24 +196,6 @@
 			<img src="Loc9.jpg" alt="Ash" class="imageborder"/>
 			<h3>Description</h3>
 			<p>Once reaching the bottom of the Great Hollow, players walk out into an endless sea of trees and fog on a sandy beach. The player can encounter another hydra while finding rare items along the beach and around the trees that the player can reach. Waiting at the end is one of the Everlasting Stone Dragons, where the player can unlock the power of the Dragons.</p>
-			<h3>Bosses</h3>
-			<table>
-				<colgroup>
-					<col span="1" style="width: 55%;">
-					<col span="1" style="width: 20%;">
-					<col span="1" style="width: 25%;">
-				</colgroup>
-				<tr>
-					<th>Name</th>
-					<th>Souls</th>
-					<th>Required?</th>
-				</tr>
-				<tr>
-					<td>None</td>
-					<td>N/A</td>
-					<td>N/A</td>
-				</tr>
-			</table>
 			<br/>
 			<hr></hr>
 			<br/>
@@ -383,24 +313,6 @@
 			<img src="Loc14.png" alt="Basin" class="imageborder"/>
 			<h3>Description</h3>
 			<p>The Darkroot Basin is a small side area accessed through Darkroot Garden or Undead Burg with the master key. This area has the well and Hydra area with crystal golems used to access the DLC as well as providing access to Darkroot Garden, Undead Burg, and a shortcut to Valley of the Drakes.</p>
-			<h3>Bosses</h3>
-			<table>
-				<colgroup>
-					<col span="1" style="width: 55%;">
-					<col span="1" style="width: 20%;">
-					<col span="1" style="width: 25%;">
-				</colgroup>
-				<tr>
-					<th>Name</th>
-					<th>Souls</th>
-					<th>Required?</th>
-				</tr>
-				<tr>
-					<td>None</td>
-					<td>N/A</td>
-					<td>N/A</td>
-				</tr>
-			</table>
 			<br/>
 			<hr></hr>
 			<br/>
@@ -408,24 +320,6 @@
 			<img src="Loc23.jpg" alt="Valley" class="imageborder"/>
 			<h3>Description</h3>
 			<p>The Valley of the Drakes is a connector area in Dark Souls with pathways to and from New Londo Ruins, Blighttown, Darkroot Basin, and Firelink Shrine. The valley boasts a lone bridge with a handful of drakes as well as an undead dragon on the cliffside guarding some useful items. The most important feature of the area is the large iron door to the New Londo Ruins, as once opened this door will allow the water to drain from the abandoned city.</p>
-			<h3>Bosses</h3>
-			<table>
-				<colgroup>
-					<col span="1" style="width: 55%;">
-					<col span="1" style="width: 20%;">
-					<col span="1" style="width: 25%;">
-				</colgroup>
-				<tr>
-					<th>Name</th>
-					<th>Souls</th>
-					<th>Required?</th>
-				</tr>
-				<tr>
-					<td>None</td>
-					<td>N/A</td>
-					<td>N/A</td>
-				</tr>
-			</table>
 			<br/>
 			<hr></hr>
 			<br/>
@@ -458,24 +352,6 @@
 			<img src="Loc16.jpg" alt="Archives" class="imageborder"/>
 			<h3>Description</h3>
 			<p>Travelling up to the archives from Anor Londo will pit the player against two armoured boars in a narrow hallway, proving to be a tough test to enter. Once inside, the player will face off against Seath's channelers and several crystalized hollows to reach Seath's sanctum. The player will not be able to kill Seath thanks to his immortality crystal, and faces imprisonment in the archive tower. Once imprisoned, the player must take on snake men and Seath's horrific serpent creations to get the key to escape. When they finally get out, the player will be able to access the Crystal Cave and several previously locked areas with plenty of loot for magic users.</p>
-			<h3>Bosses</h3>
-			<table>
-				<colgroup>
-					<col span="1" style="width: 55%;">
-					<col span="1" style="width: 20%;">
-					<col span="1" style="width: 25%;">
-				</colgroup>
-				<tr>
-					<th>Name</th>
-					<th>Souls</th>
-					<th>Required?</th>
-				</tr>
-				<tr>
-					<td>None</td>
-					<td>N/A</td>
-					<td>N/A</td>
-				</tr>
-			</table>
 			<br/>
 			<hr></hr>
 			<br/>
@@ -507,7 +383,7 @@
 			<h2>The Demon Ruins</h2>
 			<img src="Loc18.jpg" alt="Demons" class="imageborder"/>
 			<h3>Description</h3>
-			<p>Past Quelaag's domain lies the Demon Ruins leading down to Lost Izalith. The player must first fight Ceaseless Discharge, a large mass protecting his sister's grave but also keeping the Lava level too high to reach the lower ruins. Once defeated, the lava lowers to reveal many Taurus and Capra demons to fight in the ancient ruins. After getting through to the large door, the player may take the Daughter of Chaos shortcut to Lost Izalith by donating 30 humanity to the chaos covenant. Otherwise, the player must take on the Demon Firesage, the first of all demons, before facing the Centipede Demon in the lava lake below. Beating the demon or cutting off its tail will result in the player receiving the orange charred ring which allows traversal to the ancient city of Lost Izalith.</p>
+			<p>Past Quelaag's domain we find the Demon Ruins that lead down towards Lost Izalith. The player must first fight Ceaseless Discharge, a large mass of magma protecting his sister's grave but also keeping the lava level too high to reach the lower ruins. Once defeated, the lava lowers to reveal many Taurus and Capra demons to fight in the ancient ruins. After getting through to the large door, the player may take the Daughter of Chaos shortcut to Lost Izalith by donating 30 humanity to the chaos covenant. Otherwise, the player must take on the Demon Firesage, the first of all demons, before facing the Centipede Demon in the lava lake below. Beating the demon or cutting off its tail will result in the player receiving the orange charred ring which allows traversal to the ancient city of Lost Izalith.</p>
 			<h3>Bosses</h3>
 			<table>
 				<colgroup>
@@ -671,24 +547,6 @@
 			<img src="DLCLoc2.jpg" alt="The Iron Golem" class="imageborder"/>
 			<h3>Description</h3>
 			<p>At the Oolacile Sanctuary the player will meet Elizabeth, who tells the player that Dusk was kidnapped by Manus, Father of the Abyss. Once the player is done resting up, they travel to the Royal Wood in search of the Abyss.</p>
-			<h3>Bosses</h3>
-			<table>
-				<colgroup>
-					<col span="1" style="width: 55%;">
-					<col span="1" style="width: 20%;">
-					<col span="1" style="width: 25%;">
-				</colgroup>
-				<tr>
-					<th>Name</th>
-					<th>Souls</th>
-					<th>Required?</th>
-				</tr>
-				<tr>
-					<td>None</td>
-					<td>N/A</td>
-					<td>N/A</td>
-				</tr>
-			</table>
 			<br/>
 			<hr></hr>
 			<br/>
@@ -726,24 +584,6 @@
 			<img src="DLCLoc4.jpg" alt="The Iron Golem" class="imageborder"/>
 			<h3>Description</h3>
 			<p>The Oolacile Township is a city sinking into the abyss. The residents are corrupted by the abyss as they have bloated heads and attack in a crazed frenzy. There are dark magic users as well, throwing high damage magic attacks towards the player. The player will unlock some elevator shortcuts before making their way towards the abyss, ending in a fight against the unique Chained Prisoner enemy. After defeating it, the Chosen Undead makes their way down an elevator shaft into the Chasm of the Abyss.</p>
-			<h3>Bosses</h3>
-			<table>
-				<colgroup>
-					<col span="1" style="width: 55%;">
-					<col span="1" style="width: 20%;">
-					<col span="1" style="width: 25%;">
-				</colgroup>
-				<tr>
-					<th>Name</th>
-					<th>Souls</th>
-					<th>Required?</th>
-				</tr>
-				<tr>
-					<td>None</td>
-					<td>N/A</td>
-					<td>N/A</td>
-				</tr>
-			</table>
 			<br/>
 			<hr></hr>
 			<br/>
@@ -770,13 +610,12 @@
 				</tr>
 			</table>
 			<br/>
-			<hr></hr>
-			<br/>
 
 		</div>
 	</main>
 	<footer id="theFooter">
 		<p>Unofficial Dark Souls Wiki 2023<p>
+		<a href="#backToTop">↑ Back To Top ↑</a>
 	</footer>
 </body>
 

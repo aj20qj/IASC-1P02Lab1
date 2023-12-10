@@ -6,19 +6,22 @@
 		<meta content="en-us" http-equiv="Content-Language" />
 		<title>Dark Souls Mini Wiki</title>
 		<link href="P2.css" type="text/css" rel="stylesheet" />
-		<script type="text/javascript" src="scripts.js"></script>
 	</head>
 
-	<body>
-
+	<body onload="theTime()">
+		<a id="backToTop"></a>
 		<div id="TopBackground">
+			<div id="time"></div>
+			<div id="date"></div>
 			<img id="Logo" src="DarkSoulsWiki.png" alt="DSWiki"/>
 		</div>
+
+<script type="text/javascript" src="scripts.js"></script>
 
 		<div id="wrapper">
 			<nav id="topnav">
 				<ul>
-					<li><a href="P1.html">Walkthrough</a></li>
+					<li><a href="P1.html">Lore</a></li>
 					<li><a href="P3.html">Locations</a></li>
 				</ul>
 			</nav>
@@ -279,9 +282,47 @@
 					<td>30,000</td>
 				</tr>
 			</table>
+			<br></br>
+			<h2>Hit Calculator</h2>
+			<p>Enter the AR that your right handed weapon does and select a boss to determine how many attacks it will take to defeat them based on health!</p>
+			<form action="/" method="get" name="form1">
+				<input type="text" id="num1"/>
+				<select id = "bossList" onchange = "bossSelect()">
+					<option value="0"> Select Boss </option>
+					<option value="825"> Asylum Demon </option>
+					<option value="5400"> Black Dragon Kalameet </option>
+					<option value="1480"> Bell Gargoyles </option>
+					<option value="1176"> Capra Demon </option>
+					<option value="4200"> Ceaseless Discharge </option>
+					<option value="3432"> Centipede Demon </option>
+					<option value="3139"> Chaos Witch Quelaag </option>
+					<option value="2300"> Crossbreed Priscilla </option>
+					<option value="2000"> Dark Sun Gwyndolin </option>
+					<option value="5950"> Demon Firesage </option>
+					<option value="9604"> Four Kings </option>
+					<option value="4401"> Gaping Dragon </option>
+					<option value="4317"> Gravelord Nito </option>
+					<option value="3432"> Great Grey Wolf Sif </option>
+					<option value="4250"> Gwyn Lord of Cinder </option>
+					<option value="2880"> Iron Golem </option>
+					<option value="3750"> Knight Artorias </option>
+					<option value="6665"> Manus, Father of the Abyss </option>
+					<option value="1000"> Moonlight Butterfly </option>
+					<option value="5736"> Ornstein & Smough </option>
+					<option value="1326"> Pinwheel </option>
+					<option value="2560"> Sanctuary Guardian </option>
+					<option value="5525"> Seath the Scaleless </option>
+					<option value="5250"> Stray Demon </option>
+					<option value="1215"> Taurus Demon </option>
+					<option value="2"> The Bed of Chaos </option>
+				</select>
+				<input type="button" onclick="divButton()" value="="/>
+			</form>
+			<p>The boss will be slain in <span id="resultID">X</span> hits!</p>
 		</main>
 		<br/>
-<footer id="theFooter">
-<p>Unofficial Dark Souls Wiki 2023<p>
-</footer>
+		<footer id="theFooter">
+			<p>Unofficial Dark Souls Wiki 2023<p>
+			<a href="#backToTop">↑ Back To Top ↑</a>
+		</footer>
 </body>
